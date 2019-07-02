@@ -207,7 +207,7 @@
         android:onClick="subtractionMethod"
         android:text="-"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="16dp"
 
         />
 
