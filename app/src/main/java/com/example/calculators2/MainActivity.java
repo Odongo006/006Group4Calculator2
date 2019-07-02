@@ -30,5 +30,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button ButtonOne =(Button)findViewById(R.id.bt_one_id);
+        Button ButtonTwo=(Button)findViewById(R.id.bt_two_id);
+        Button ButtonThree=(Button)findViewById(R.id.bt_three_id);
+        Button ButtonFour=(Button)findViewById(R.id.bt_four_id);
+        Button ButtonFive=(Button)findViewById(R.id.bt_five_id);
+        Button ButtonSix=(Button)findViewById(R.id.bt_six_id);
+        Button ButtonSeven=(Button)findViewById((R.id.bt_seven_id));
+        Button ButtonEight=(Button)findViewById(R.id.bt_eight_id);
+        Button ButtonNine=(Button)findViewById(R.id.bt_nine_id);
+        Button ButtonDivision=(Button)findViewById(R.id.bt_division_id);
+        Button ButtonMultiplicatio=(Button)findViewById(R.id.bt_multiplication_id);
+        Button ButtonAddition=(Button)findViewById(R.id.bt_addition_id);
+        Button ButtonSubtraction=(Button)findViewById(R.id.bt_subtraction_id);
+        Button ButtonDecimal=(Button)findViewById(R.id.bt_decimal_id);
+        Button ButtonZero=(Button)findViewById(R.id.bt_zero_id);
+        Button ButtonPercentage=(Button)findViewById(R.id.bt_percentage_id);
+        Button ButtonDelete=(Button)findViewById(R.id.bt_delete_id);
+        Button ButtonEqual=(Button)findViewById(R.id.bt_equal_id);
+
+
     }
 }

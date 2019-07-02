@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
+    
 
     <Button
         android:layout_width="wrap_content"
@@ -16,7 +17,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="200dp"
         android:onClick="methodOne"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -30,7 +31,7 @@
         android:onClick="methodTwo"
         android:layout_toRightOf="@id/bt_one_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
 
       <Button
@@ -43,7 +44,7 @@
         android:onClick="methodThree"
         android:layout_toRightOf="@id/bt_two_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
 
         />
@@ -61,7 +62,7 @@
         android:onClick="methodFour"
        android:layout_below="@id/bt_one_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
 
         />
@@ -77,7 +78,7 @@
         android:layout_toRightOf="@id/bt_four_id"
         android:layout_below="@id/bt_two_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -92,7 +93,7 @@
         android:layout_toRightOf="@id/bt_five_id"
         android:onClick="methodSix"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:text="6" />
 
     <Button
@@ -105,7 +106,7 @@
         android:onClick="methodSeven"
         android:text="7"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -120,7 +121,7 @@
         android:layout_toRightOf="@id/bt_four_id"
         android:layout_below="@id/bt_five_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -136,7 +137,7 @@
         android:layout_toRightOf="@id/bt_eight_id"
         android:onClick="methodNine"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
        />
 
     <Button
@@ -150,7 +151,7 @@
         android:layout_marginTop="20dp"
         android:onClick="devisionMethod"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
     <Button
         android:layout_width="wrap_content"
@@ -164,7 +165,7 @@
         android:onClick="multiplicationMethod"
         android:layout_toRightOf="@id/bt_division_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -181,7 +182,7 @@
        android:onClick="additionMethod"
         android:layout_toRightOf="@id/bt_multiplication_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
 
     <Button
@@ -194,7 +195,7 @@
         android:onClick="subtractionMethod"
         android:text="-"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
 
         />
 
@@ -210,7 +211,7 @@
         android:onClick="decimalMethod"
         android:layout_toRightOf="@id/bt_subtraction_id"
         android:textStyle="bold"
-        android:textSize="20dp" />
+        android:textSize="15dp" />
 
 
 
@@ -228,7 +229,7 @@
         android:onClick="Methodzero"
         android:layout_toRightOf="@id/bt_decimal_id"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
 
     <Button
@@ -243,7 +244,7 @@
         android:text="%"
         android:layout_marginEnd="5dp"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
     <Button
         android:layout_width="wrap_content"
@@ -258,7 +259,7 @@
         android:layout_toRightOf="@id/bt_three_id"
         android:layout_marginEnd="5dp"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
     />
 
     <Button
@@ -276,7 +277,7 @@
         android:paddingTop="75dp"
         android:layout_marginEnd="5dp"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="15dp"
         />
 
 
