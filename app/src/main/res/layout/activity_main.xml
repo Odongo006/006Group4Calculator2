@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_one_id"
+        android:text="1"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="200dp"
+        android:onClick="methodOne"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_two_id"
+        android:text="2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:onClick="methodTwo"
+        android:layout_toRightOf="@id/bt_one_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+      <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_three_id"
+        android:text="3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:onClick="methodThree"
+        android:layout_toRightOf="@id/bt_two_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_four_id"
+        android:text="4"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:onClick="methodFour"
+       android:layout_below="@id/bt_one_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_five_id"
+        android:text="5"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="methodFive"
+        android:layout_toRightOf="@id/bt_four_id"
+        android:layout_below="@id/bt_two_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/bt_six_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_two_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/bt_five_id"
+        android:onClick="methodSix"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/bt_seven_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_four_id"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="23dp"
+        android:onClick="methodSeven"
+        android:text="7"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_eight_id"
+        android:text="8"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="methodEight"
+        android:layout_toRightOf="@id/bt_four_id"
+        android:layout_below="@id/bt_five_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/bt_nine_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:layout_below="@id/bt_six_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/bt_eight_id"
+        android:onClick="methodNine"
+        android:textStyle="bold"
+        android:textSize="20dp"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_division_id"
+        android:text="/"
+        android:layout_below="@id/bt_seven_id"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="devisionMethod"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_multiplication_id"
+        android:text="*"
+        android:layout_below="@id/bt_eight_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="multiplicationMethod"
+        android:layout_toRightOf="@id/bt_division_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_addition_id"
+        android:text="+"
+        android:layout_below="@id/bt_seven_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+       android:onClick="additionMethod"
+        android:layout_toRightOf="@id/bt_multiplication_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_subtraction_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_division_id"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="22dp"
+        android:onClick="subtractionMethod"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_decimal_id"
+        android:text="."
+        android:layout_below="@id/bt_division_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="decimalMethod"
+        android:layout_toRightOf="@id/bt_subtraction_id"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_zero_id"
+        android:text="0"
+        android:layout_below="@id/bt_multiplication_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Methodzero"
+        android:layout_toRightOf="@id/bt_decimal_id"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/bt_percentage_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/bt_three_id"
+        android:onClick="percentageMethod"
+        android:text="%"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_delete_id"
+        android:text="DEL"
+        android:layout_below="@id/bt_percentage_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="deleteMethod"
+        android:layout_toRightOf="@id/bt_three_id"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_equal_id"
+        android:text="="
+        android:layout_below="@id/bt_delete_id"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="equalMethod"
+        android:layout_toRightOf="@id/bt_three_id"
+        android:paddingBottom="90dp"
+        android:paddingTop="75dp"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
