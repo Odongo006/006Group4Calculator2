@@ -137,14 +137,24 @@ ButtonZero.setOnClickListener(new View.OnClickListener() {
 ButtonAddition.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-      if (result==null ){
-          result.setText("");
-      }else{
-          mValueOne=Float.parseFloat(result.getText()+"");
-          Addition=true;
-          result.setText(null);
-      }
+        if (result == null) {
+            result.setText("");
+        } else {
+            mValueOne = Float.parseFloat(result.getText() + "");
+            Addition = true;
+            result.setText(null);
+        }
     }
+
 });
+
+        ButtonSubtraction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               mValueOne=Float.parseFloat(result.getText()+"");
+               Subtract=true;
+
+            }
+        });
     }
 }
