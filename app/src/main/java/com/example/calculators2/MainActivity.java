@@ -4,9 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+private EditText result;
     private Button one;
     private Button two;
     private Button three;
@@ -25,6 +27,17 @@ public class MainActivity extends AppCompatActivity {
     private Button percentage;
     private Button delete;
     private Button equal;
+    private TextView myTextView;
+
+
+    float mValueOne, mValueTwo;
+    boolean Addition, Subtract, Multiplication, Division;
+
+
+
+
+
+
 
 
 
@@ -33,31 +46,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button ButtonAddition=(Button)findViewById(R.id.bt_addition_id);
-ButtonAddition.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Button ButtonOne =(Button)findViewById(R.id.bt_one_id);
-        Button ButtonTwo=(Button)findViewById(R.id.bt_two_id);
-        Button ButtonThree=(Button)findViewById(R.id.bt_three_id);
-        Button ButtonFour=(Button)findViewById(R.id.bt_four_id);
-        Button ButtonFive=(Button)findViewById(R.id.bt_five_id);
-        Button ButtonSix=(Button)findViewById(R.id.bt_six_id);
-        Button ButtonSeven=(Button)findViewById((R.id.bt_seven_id));
-        Button ButtonEight=(Button)findViewById(R.id.bt_eight_id);
-        Button ButtonNine=(Button)findViewById(R.id.bt_nine_id);
-        Button ButtonZero=(Button)findViewById(R.id.bt_zero_id);
-
-
-    }
-});
-
-
-       /**
-        Button ButtonOne =(Button)findViewById(R.id.bt_one_id);
-        Button ButtonTwo=(Button)findViewById(R.id.bt_two_id);
-        Button ButtonThree=(Button)findViewById(R.id.bt_three_id);
-        Button ButtonFour=(Button)findViewById(R.id.bt_four_id);
+        final Button ButtonOne =(Button) findViewById(R.id.bt_one_id);
+        final Button ButtonTwo=(Button)findViewById(R.id.bt_two_id);
+        final Button ButtonThree=(Button)findViewById(R.id.bt_three_id);
+        final Button ButtonFour=(Button)findViewById(R.id.bt_four_id);
         Button ButtonFive=(Button)findViewById(R.id.bt_five_id);
         Button ButtonSix=(Button)findViewById(R.id.bt_six_id);
         Button ButtonSeven=(Button)findViewById((R.id.bt_seven_id));
@@ -72,8 +64,38 @@ ButtonAddition.setOnClickListener(new View.OnClickListener() {
         Button ButtonPercentage=(Button)findViewById(R.id.bt_percentage_id);
         Button ButtonDelete=(Button)findViewById(R.id.bt_delete_id);
         Button ButtonEqual=(Button)findViewById(R.id.bt_equal_id);
-        **/
 
+
+        ButtonOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ButtonOne.setText(ButtonOne.getText()+"1");
+            }
+        });
+
+        ButtonTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ButtonTwo.setText(ButtonTwo.getText()+"2");
+            }
+        });
+
+
+        ButtonThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ButtonThree.setText(ButtonThree.getText()+"3");
+
+            }
+        });
+
+        ButtonFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              ButtonFour.setText(ButtonFour.getText()+"4");
+
+            }
+        });
 
     }
 }

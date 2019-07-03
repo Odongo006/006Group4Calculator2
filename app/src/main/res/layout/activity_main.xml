@@ -5,16 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#000000"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/ed_result_id"
+            android:gravity="end"/>
+
+
+
+
         <TextView
+            android:id="@+id/tv_screen_id"
             android:layout_width="wrap_content"
             android:layout_height="170dp"
-            android:backgroundTint="#041FDF"
-            android:id="@+id/tv_screen_id"
+            android:gravity="end"
+
+
             />
 
     </RelativeLayout>
@@ -28,7 +43,6 @@
         android:textStyle="bold"
         android:layout_marginStart="5dp"
         android:layout_marginTop="200dp"
-        android:onClick="methodOne"
         android:textSize="15dp"
 
         />
