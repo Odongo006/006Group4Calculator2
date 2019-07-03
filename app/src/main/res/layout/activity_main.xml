@@ -17,20 +17,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:id="@+id/ed_result_id"
-            android:gravity="end"/>
-
-
-
-
-        <TextView
-            android:id="@+id/tv_screen_id"
-            android:layout_width="wrap_content"
-            android:layout_height="170dp"
+            android:id="@+id/et_result_id"
             android:gravity="end"
-
-
-            />
+            android:inputType=""/>
+        />
 
     </RelativeLayout>
     
@@ -54,7 +44,7 @@
         android:text="2"
         android:layout_marginStart="10dp"
         android:layout_marginTop="200dp"
-        android:onClick="methodTwo"
+
         android:layout_toRightOf="@id/bt_one_id"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -67,7 +57,7 @@
         android:text="3"
         android:layout_marginStart="10dp"
         android:layout_marginTop="200dp"
-        android:onClick="methodThree"
+
         android:layout_toRightOf="@id/bt_two_id"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -85,7 +75,7 @@
         android:text="4"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
-        android:onClick="methodFour"
+
        android:layout_below="@id/bt_one_id"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -100,7 +90,7 @@
         android:text="5"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:onClick="methodFive"
+
         android:layout_toRightOf="@id/bt_four_id"
         android:layout_below="@id/bt_two_id"
         android:textStyle="bold"
@@ -117,7 +107,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/bt_five_id"
-        android:onClick="methodSix"
+
         android:textStyle="bold"
         android:textSize="15dp"
         android:text="6" />
@@ -129,7 +119,7 @@
         android:layout_below="@id/bt_four_id"
         android:layout_marginStart="5dp"
         android:layout_marginTop="23dp"
-        android:onClick="methodSeven"
+
         android:text="7"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -143,7 +133,7 @@
         android:text="8"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
-        android:onClick="methodEight"
+
         android:layout_toRightOf="@id/bt_four_id"
         android:layout_below="@id/bt_five_id"
         android:textStyle="bold"
@@ -161,7 +151,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/bt_eight_id"
-        android:onClick="methodNine"
+
         android:textStyle="bold"
         android:textSize="15dp"
        />
@@ -175,7 +165,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="devisionMethod"
+
         android:textStyle="bold"
         android:textSize="15dp"
         />
@@ -188,7 +178,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="multiplicationMethod"
+
         android:layout_toRightOf="@id/bt_division_id"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -205,7 +195,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-       android:onClick="additionMethod"
+
         android:layout_toRightOf="@id/bt_multiplication_id"
         android:textStyle="bold"
         android:textSize="16dp"
@@ -218,7 +208,7 @@
         android:layout_below="@id/bt_division_id"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="22dp"
-        android:onClick="subtractionMethod"
+
         android:text="-"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -234,7 +224,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="decimalMethod"
+
         android:layout_toRightOf="@id/bt_subtraction_id"
         android:textStyle="bold"
         android:textSize="15dp" />
@@ -252,7 +242,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="Methodzero"
+
         android:layout_toRightOf="@id/bt_decimal_id"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -266,7 +256,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="200dp"
         android:layout_toRightOf="@id/bt_three_id"
-        android:onClick="percentageMethod"
+
         android:text="%"
         android:layout_marginEnd="5dp"
         android:textStyle="bold"
@@ -281,7 +271,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="deleteMethod"
+
         android:layout_toRightOf="@id/bt_three_id"
         android:layout_marginEnd="5dp"
         android:textStyle="bold"
@@ -297,7 +287,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="20dp"
-        android:onClick="equalMethod"
+
         android:layout_toRightOf="@id/bt_three_id"
         android:paddingBottom="90dp"
         android:paddingTop="75dp"

@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-private EditText result;
+
     private Button one;
     private Button two;
     private Button three;
@@ -28,10 +28,10 @@ private EditText result;
     private Button delete;
     private Button equal;
     private TextView myTextView;
-
-
+    private EditText result;
     float mValueOne, mValueTwo;
     boolean Addition, Subtract, Multiplication, Division;
+
 
 
 
@@ -50,20 +50,21 @@ private EditText result;
         final Button ButtonTwo=(Button)findViewById(R.id.bt_two_id);
         final Button ButtonThree=(Button)findViewById(R.id.bt_three_id);
         final Button ButtonFour=(Button)findViewById(R.id.bt_four_id);
-        Button ButtonFive=(Button)findViewById(R.id.bt_five_id);
-        Button ButtonSix=(Button)findViewById(R.id.bt_six_id);
-        Button ButtonSeven=(Button)findViewById((R.id.bt_seven_id));
-        Button ButtonEight=(Button)findViewById(R.id.bt_eight_id);
-        Button ButtonNine=(Button)findViewById(R.id.bt_nine_id);
+        final Button ButtonFive=(Button)findViewById(R.id.bt_five_id);
+        final Button ButtonSix=(Button)findViewById(R.id.bt_six_id);
+        final Button ButtonSeven=(Button)findViewById((R.id.bt_seven_id));
+        final Button ButtonEight=(Button)findViewById(R.id.bt_eight_id);
+        final Button ButtonNine=(Button)findViewById(R.id.bt_nine_id);
         Button ButtonDivision=(Button)findViewById(R.id.bt_division_id);
         Button ButtonMultiplicatio=(Button)findViewById(R.id.bt_multiplication_id);
         Button ButtonAddition=(Button)findViewById(R.id.bt_addition_id);
         Button ButtonSubtraction=(Button)findViewById(R.id.bt_subtraction_id);
         Button ButtonDecimal=(Button)findViewById(R.id.bt_decimal_id);
-        Button ButtonZero=(Button)findViewById(R.id.bt_zero_id);
+        final Button ButtonZero=(Button)findViewById(R.id.bt_zero_id);
         Button ButtonPercentage=(Button)findViewById(R.id.bt_percentage_id);
         Button ButtonDelete=(Button)findViewById(R.id.bt_delete_id);
         Button ButtonEqual=(Button)findViewById(R.id.bt_equal_id);
+        final EditText result=(EditText)findViewById(R.id.et_result_id);
 
 
         ButtonOne.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +97,54 @@ private EditText result;
 
             }
         });
+ButtonFive.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonFive.setText(ButtonFive.getText()+"5");
+    }
+});
+ButtonSix.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonSix.setText(ButtonSix.getText()+"6");
+    }
+});
+ButtonSeven.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonSeven.setText(ButtonSeven.getText()+"7");
+    }
+});
+ButtonEight.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonEight.setText(ButtonEight.getText()+"8");
+    }
+});
+ButtonNine.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonNine.setText(ButtonNine.getText()+"9");
+    }
+});
 
+ButtonZero.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        ButtonZero.setText(ButtonZero.getText()+"0");
+    }
+});
+ButtonAddition.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+      if (result==null ){
+          result.setText("");
+      }else{
+          mValueOne=Float.parseFloat(result.getText()+"");
+          Addition=true;
+          result.setText(null);
+      }
+    }
+});
     }
 }
