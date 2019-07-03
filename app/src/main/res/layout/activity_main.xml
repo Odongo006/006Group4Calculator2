@@ -181,7 +181,7 @@
 
         android:layout_toRightOf="@id/bt_division_id"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="16dp"
 
         />
 
